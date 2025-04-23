@@ -167,7 +167,7 @@ export default {
   
       const result = await Swal.fire({
         title: "¿Estás seguro?",
-        text: `¿Quieres eliminar al recurso ${almacen.nombre_almacen}?`,
+        text: `¿Quieres eliminar el almacen ${almacen.nombre_almacen}?`,
         icon: "warning",
         showCancelButton: true,
         confirmButtonText: '<span style="color:white;">Sí, eliminar</span>',
@@ -183,15 +183,15 @@ export default {
         );
         Swal.fire({
           icon: "success",
-          title: "¡Recurso eliminado exitosamente!",
+          title: "¡Almacen eliminado exitosamente!",
           confirmButtonText: "OK",
         });
       } catch (error) {
         console.error("Error al eliminar recurso:", error);
         Swal.fire({
           icon: "error",
-          title: "Error al eliminar recurso",
-          text: "Ha ocurrido un error al intentar eliminar el recurso.",
+          title: "Error al eliminar almacen",
+          text: "NO se puede eliminar el almacen debido a que tiene recursos u otra tabla relacionada.",
         });
       }
     },
