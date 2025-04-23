@@ -15,7 +15,7 @@
         @click="$router.push({ name: 'almacenes.create' })"
         class="btn btn-primary"
       >
-        + Crear nuevo Almacén
+        + Crear nuevo Almacén.
       </button>
     </div>
 
